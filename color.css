@@ -1,3 +1,11 @@
 * {
-  
+
+}
+
+body {
+  background-image: url("blind-pics/tough.webp");
+}
+
+#title {
+  font-family: monospace;
 }
