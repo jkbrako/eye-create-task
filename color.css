@@ -14,6 +14,10 @@ body {
   background-image: url("blind-pics/tough.webp");
 }
 
+#intro {
+
+}
+
 .hide{
   display:none;
 }
