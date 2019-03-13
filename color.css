@@ -25,6 +25,10 @@ body {
   display:block;
 }
 
+.questions {
+
+}
+
 img {
 
 }
@@ -42,7 +46,7 @@ input {
   text-shadow: 0 1px rgba(255, 255, 255, 0.4);
 }
 button:hover {
-  color: #398ac0;
+  color: white;
 }
 h1#title {
   font-family: monospace;
