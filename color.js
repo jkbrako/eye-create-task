@@ -12,8 +12,8 @@
   function colorOne() {
     if (start != 74 ) {
       start.setAttribute("value", "");
-
     }
+
       if (start = 74) {
         console.log("CORRECT");
         results.push = ["74"]
