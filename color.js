@@ -1,26 +1,27 @@
-var response = document.getElementById('textInput').innerHTML;
-
-  function startQuiz(){
-    document.getElementById('start').onclick = response;
-  }
   var textInput = "";
   var results = [];
+  var start = document.createElement("INPUT");
 
+
+  function startQuiz() {
+    start.setAttribute("type", "text");
+    start.setAttribute("value", "");
+    document.body.appendChild(start);
+}
 
   function colorOne() {
-    var textInput = "";
-    if (response > 0 || response < 0) {
-      colorTwo();
-    }  else {
-      textInput = "";
+    if (start != 74 ) {
+      start.setAttribute("value", "");
+
     }
-      if (response = 74) {
+      if (start = 74) {
         console.log("CORRECT");
         results.push = ["74"]
       } else {
         console.log ("WRONG");
     }
-  }
+
+      }
 
   function colorTwo() {
      response = textInput;
