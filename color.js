@@ -2,6 +2,22 @@
   var results = [];
   var start = document.createElement("INPUT");
 
+let x = document.getElementsByClassName("hide");
+let timesClicked = 1;
+function submit(){
+  if (!question1) {
+    return;
+  }
+  let one = document.getElementsByClassName("hide");
+  for(let y = 0; y < [timesClicked].length; y++) {
+    one[y].style.display = "none";
+  }
+  // declare variables for each to determine which question is cleared/displayed
+  timesClicked++;
+  for(let y = 0; y < [timesClicked].length; y++) {
+    two[y].style.display = "none";
+  }
+}
 
   function startQuiz() {
     start.setAttribute("type", "text");
@@ -10,27 +26,29 @@
 }
 
   function colorOne() {
-    if (start != 74 ) {
+    if (start != 74) {
       start.setAttribute("value", "");
     }
-
       if (start = 74) {
         console.log("CORRECT");
         results.push = ["74"]
       } else {
         console.log ("WRONG");
     }
-
-      }
+    let one = document.getElementsByClassName("hide");
+    for(let y = 0; y < one.length; y++) {
+      one[y].style.display = "none";
+    }
+}
 
   function colorTwo() {
      response = textInput;
-    if (response > 0 || response < 0) {
+    if (response != 0) {
       colorThree();
     } else {
     textInput = "";
   }
-      if (response = 12) {
+      if (response == 12) {
         console.log("CORRECT");
         results.push = ["12"]
       } else {
@@ -47,7 +65,7 @@
     } else {
     textInput = "";
   }
-      if (response = 29) {
+      if (response == 29) {
         console.log("CORRECT");
         results.push = ["29"]
       } else {
@@ -170,5 +188,6 @@
 
   function result() {
     // show image based how many answers are correct
-    //
-    }
+  var scores = console.log(results.length);
+  results
+  }
