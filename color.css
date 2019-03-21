@@ -10,16 +10,20 @@
   padding: 0;
   box-sizing: inherit;
 }
-body {
+body#home {
   background-image: url("blind-pics/tough.webp");
 }
 
-#intro {
+body {
+background-image: url("blind-pics/color-pixel.gif");
+}
+
+#submit {
 
 }
 
 .hide{
-  display:none;
+  /*display:none;*/
 }
 .show{
   display:block;

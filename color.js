@@ -4,19 +4,64 @@
 
 let x = document.getElementsByClassName("hide");
 let timesClicked = 1;
+
+// declare variables for each to determine which question is cleared/displayed
+let one = document.getElementsByClassName("hide");
+let two = document.getElementsByClassName("hide");
+let three = document.getElementsByClassName("hide");
+let four = document.getElementsByClassName("hide");
+let five = document.getElementsByClassName("hide");
+let six = document.getElementsByClassName("hide");
+let seven = document.getElementsByClassName("hide");
+let eight = document.getElementsByClassName("hide");
+let nine = document.getElementsByClassName("hide");
+let ten = document.getElementsByClassName("hide");
+
+
 function submit(){
-  if (!question1) {
+  if (!one) {
     return;
   }
-  let one = document.getElementsByClassName("hide");
   for(let y = 0; y < [timesClicked].length; y++) {
     one[y].style.display = "none";
+    colorOne()
   }
-  // declare variables for each to determine which question is cleared/displayed
-  timesClicked++;
+/*  timesClicked++;
   for(let y = 0; y < [timesClicked].length; y++) {
     two[y].style.display = "none";
   }
+  for(let y = 0; y < [timesClicked].length; y++) {
+    three[y].style.display = "none";
+  }
+  timesClicked++;
+  for(let y = 0; y < [timesClicked].length; y++) {
+    four[y].style.display = "none";
+  }
+  timesClicked++;
+  for(let y = 0; y < [timesClicked].length; y++) {
+    five[y].style.display = "none";
+  }
+  timesClicked++;
+  for(let y = 0; y < [timesClicked].length; y++) {
+    six[y].style.display = "none";
+  }
+  timesClicked++;
+  for(let y = 0; y < [timesClicked].length; y++) {
+    seven[y].style.display = "none";
+  }
+  timesClicked++;
+  for(let y = 0; y < [timesClicked].length; y++) {
+    eight[y].style.display = "none";
+  }
+  timesClicked++;
+  for(let y = 0; y < [timesClicked].length; y++) {
+    nine[y].style.display = "none";
+  }
+  timesClicked++;
+  for(let y = 0; y < [timesClicked].length; y++) {
+    ten[y].style.display = "none";
+  }
+  timesClicked++; */
 }
 
   function startQuiz() {
@@ -26,27 +71,26 @@ function submit(){
 }
 
   function colorOne() {
-    if (start != 74) {
+  /*  if (start != 74) {
       start.setAttribute("value", "");
-    }
-      if (start = 74) {
-        console.log("CORRECT");
+    } */
+      if (start !== 74) {
+        console.log("WRONG");
         results.push = ["74"]
-      } else {
-        console.log ("WRONG");
+      } else if (start == 74){
+        console.log ("CORRECT");
     }
-    let one = document.getElementsByClassName("hide");
+    /* let one = document.getElementsByClassName("hide");
     for(let y = 0; y < one.length; y++) {
       one[y].style.display = "none";
-    }
+    } */
 }
 
   function colorTwo() {
-     response = textInput;
     if (response != 0) {
       colorThree();
     } else {
-    textInput = "";
+    start = "";
   }
       if (response == 12) {
         console.log("CORRECT");
@@ -59,7 +103,7 @@ function submit(){
 
   function colorThree() {
     var textInput = "";
-    var response = document.getElementById('textInput').innerHTML;
+
     if (response > 0 || response < 0) {
       colorFour();
     } else {
@@ -71,12 +115,11 @@ function submit(){
       } else {
         console.log ("WRONG");
       }
-
 }
 
   function colorFour() {
     var textInput = "";
-    var response = document.getElementById('textInput').innerHTML;
+
     if (response > 0 || response < 0) {
       colorFive();
     } else {
@@ -92,7 +135,7 @@ function submit(){
 
   function colorFive() {
     var textInput = "";
-    var response = document.getElementById('textInput').innerHTML;
+
     if (response > 0 || response < 0) {
       colorSix();
     } else {
@@ -108,7 +151,7 @@ function submit(){
 
   function colorSix() {
     var textInput = "";
-    var response = document.getElementById('textInput').innerHTML;
+
     if (response > 0 || response < 0) {
       colorSeven();
     } else {
@@ -124,7 +167,7 @@ function submit(){
 
   function colorSeven() {
     var textInput = "";
-    var response = document.getElementById('textInput').innerHTML;
+
     if (response > 0 || response < 0) {
       colorEight();
     } else {
@@ -140,7 +183,7 @@ function submit(){
 
   function colorEight() {
     var textInput = "";
-    var response = document.getElementById('textInput').innerHTML;
+
     if (response > 0 || response < 0) {
       colorNine();
     } else {
@@ -156,7 +199,7 @@ function submit(){
 
   function colorNine() {
     var textInput = "";
-    var response = document.getElementById('textInput').innerHTML;
+
     if (response > 0 || response < 0) {
       colorTen();
     } else {
@@ -172,7 +215,7 @@ function submit(){
 
   function colorTen() {
     var textInput = "";
-    var response = document.getElementById('textInput').innerHTML;
+
     if (response > 0 || response < 0) {
         result();
       } else {
