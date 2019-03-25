@@ -76,9 +76,9 @@ function submit(){
     } */
       if (start !== 74) {
         console.log("WRONG");
-        results.push = ["74"]
-      } else if (start == 74){
+      } else if (start == 74) {
         console.log ("CORRECT");
+        results.push("74")
     }
     /* let one = document.getElementsByClassName("hide");
     for(let y = 0; y < one.length; y++) {
@@ -87,14 +87,14 @@ function submit(){
 }
 
   function colorTwo() {
-    if (response != 0) {
+    if (start !== 0) {
       colorThree();
     } else {
-    start = "";
+    start = textInput;
   }
-      if (response == 12) {
+      if (start == 12) {
         console.log("CORRECT");
-        results.push = ["12"]
+        results.push("12");
       } else {
         console.log ("WRONG");
       }
@@ -104,14 +104,14 @@ function submit(){
   function colorThree() {
     var textInput = "";
 
-    if (response > 0 || response < 0) {
+    if (start > 0 || start < 0) {
       colorFour();
     } else {
-    textInput = "";
+      start = textInput;
   }
-      if (response == 29) {
+      if (start == 29) {
         console.log("CORRECT");
-        results.push = ["29"]
+        results.push("29");
       } else {
         console.log ("WRONG");
       }
@@ -120,14 +120,14 @@ function submit(){
   function colorFour() {
     var textInput = "";
 
-    if (response > 0 || response < 0) {
+    if (start > 0 || start < 0) {
       colorFive();
     } else {
-    textInput = "";
+      start = textInput;
   }
-      if (response = 2) {
+      if (start == 2) {
         console.log("CORRECT");
-        results.push = ["2"];
+        results.push("2");
       } else {
         console.log ("WRONG");
       }
@@ -136,14 +136,14 @@ function submit(){
   function colorFive() {
     var textInput = "";
 
-    if (response > 0 || response < 0) {
+    if (start > 0 || start < 0) {
       colorSix();
     } else {
-    textInput = "";
+      start = textInput;
   }
-      if (response = 8) {
+      if (start == 8) {
         console.log("CORRECT");
-        results.push = ["8"];
+        results.push("8");
       } else {
         console.log ("WRONG");
       }
@@ -152,14 +152,14 @@ function submit(){
   function colorSix() {
     var textInput = "";
 
-    if (response > 0 || response < 0) {
+    if (start > 0 || start < 0) {
       colorSeven();
     } else {
-    textInput = "";
+      start = textInput;
   }
-      if (response = 7) {
+      if (start == 7) {
         console.log("CORRECT");
-        results.push = ["7"]
+        results.push("7")
       } else {
         console.log ("WRONG");
       }
@@ -168,14 +168,14 @@ function submit(){
   function colorSeven() {
     var textInput = "";
 
-    if (response > 0 || response < 0) {
+    if (start > 0 || start < 0) {
       colorEight();
     } else {
-    textInput = "";
+      start = textInput;
   }
-      if (response = 8) {
+      if (start == 8) {
         console.log("CORRECT");
-        results.push = ["8"]
+        results.push("8");
       } else {
         console.log ("WRONG");
       }
@@ -184,14 +184,14 @@ function submit(){
   function colorEight() {
     var textInput = "";
 
-    if (response > 0 || response < 0) {
+    if (start > 0 || start < 0) {
       colorNine();
     } else {
-      textInput = "";
+      start = textInput;
     }
-      if (response = 26) {
+      if (start == 26) {
         console.log("CORRECT");
-        results.push = ["26"];
+        results.push("26");
       } else {
         console.log ("WRONG");
     }
@@ -200,14 +200,14 @@ function submit(){
   function colorNine() {
     var textInput = "";
 
-    if (response > 0 || response < 0) {
+    if (start > 0 || start < 0) {
       colorTen();
     } else {
-      textInput = "";
+      start = textInput;
     }
-      if (response = 6) {
+      if (start == 6) {
         console.log("CORRECT");
-        results.push = ["6"];
+        results.push("6");
       } else {
         console.log ("WRONG");
       }
@@ -216,14 +216,14 @@ function submit(){
   function colorTen() {
     var textInput = "";
 
-    if (response > 0 || response < 0) {
+    if (start > 0 || start < 0) {
         result();
       } else {
-        textInput = "";
+        start = textInput;
       }
-        if (response = 15) {
+        if (start == 15) {
           console.log("CORRECT");
-          results.push = ["15"];
+          results.push("15");
         } else {
           console.log ("WRONG");
         }
@@ -231,6 +231,17 @@ function submit(){
 
   function result() {
     // show image based how many answers are correct
+    
   var scores = console.log(results.length);
-  results
-  }
+
+  for (i = 0; i < i.length; i++)
+    if (results.length == 10 && results.length > 8) {
+      document.getElementById("final").src += "blind-pics/best-result.gif";
+    }
+    if (results.length < 7 && results.length > 5) {
+      document.getElementById("final").src += "blind-pics/colorblind.gif";
+    }
+    if (results.length < 4) {
+      document.getElementById("final").src += "blind-pics/FG-bad.jfif";
+    }
+}

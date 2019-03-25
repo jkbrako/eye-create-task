@@ -14,8 +14,8 @@ body#home {
   background-image: url("blind-pics/tough.webp");
 }
 
-body {
-background-image: url("blind-pics/color-pixel.gif");
+body#test {
+  background-image: url("blind-pics/pixel.gif");
 }
 
 #submit {
