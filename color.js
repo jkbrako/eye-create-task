@@ -102,7 +102,7 @@ function submit(){
 
 
   function colorThree() {
-    var textInput = "";
+
 
     if (start > 0 || start < 0) {
       colorFour();
@@ -118,7 +118,7 @@ function submit(){
 }
 
   function colorFour() {
-    var textInput = "";
+
 
     if (start > 0 || start < 0) {
       colorFive();
@@ -134,7 +134,7 @@ function submit(){
 }
 
   function colorFive() {
-    var textInput = "";
+
 
     if (start > 0 || start < 0) {
       colorSix();
@@ -150,7 +150,7 @@ function submit(){
 }
 
   function colorSix() {
-    var textInput = "";
+
 
     if (start > 0 || start < 0) {
       colorSeven();
@@ -166,7 +166,7 @@ function submit(){
 }
 
   function colorSeven() {
-    var textInput = "";
+
 
     if (start > 0 || start < 0) {
       colorEight();
@@ -182,7 +182,7 @@ function submit(){
 }
 
   function colorEight() {
-    var textInput = "";
+
 
     if (start > 0 || start < 0) {
       colorNine();
@@ -198,7 +198,7 @@ function submit(){
 }
 
   function colorNine() {
-    var textInput = "";
+
 
     if (start > 0 || start < 0) {
       colorTen();
@@ -214,7 +214,7 @@ function submit(){
   }
 
   function colorTen() {
-    var textInput = "";
+
 
     if (start > 0 || start < 0) {
         result();
@@ -229,19 +229,22 @@ function submit(){
         }
   }
 
-  function result() {
+function result() {
     // show image based how many answers are correct
-    
+
   var scores = console.log(results.length);
 
-  for (i = 0; i < i.length; i++)
+  for (i = 0; i < i.length; i++) {
     if (results.length == 10 && results.length > 8) {
-      document.getElementById("final").src += "blind-pics/best-result.gif";
+      document.getElementById("img").src += "blind-pics/best-result.gif";
     }
     if (results.length < 7 && results.length > 5) {
-      document.getElementById("final").src += "blind-pics/colorblind.gif";
+      document.getElementById("img").src += "blind-pics/colorblind.gif";
     }
     if (results.length < 4) {
-      document.getElementById("final").src += "blind-pics/FG-bad.jfif";
+      document.getElementById("img").src += "blind-pics/FG-bad.jfif";
     }
+    return results.length;
+  }
+  document.getElementById("results").innerHTML = results.length;
 }
