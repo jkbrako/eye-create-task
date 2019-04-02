@@ -248,3 +248,9 @@ function result() {
   }
   document.getElementById("results").innerHTML = results.length;
 }
+
+function percent() {
+  // needto display chance as value of colorblindness
+// document.getElementById("demo").innerHTML = myObject.fullName();
+
+}
