@@ -2,88 +2,88 @@
 <input type="button" value="Home" onclick="history.back(-1)" />
 <!-- <form action="/action_page.php">
   First name:<br>
-  <input type="text" name="firstname" value="Mickey">
+  <input type=" number" name="firstname" value="Mickey">
   <br>
   Last name:<br>
   <input type="text" name="lastname" value="Mouse">
   <br><br>
+  <html>
   <input type="submit" value="Submit">
 </form>
 -->
-<html>
   <head>
     <title>Colorblind Online Visual Test</title>
     <script type="text/javascript" src="color.js"></script>
     <center><h1>Colorblind Online Visual Test</h1></center>
   </head>
   <body id="test">
-    <div><img src="blind-pics/1.jfif"></div>
+    <div><img id="quiz-pic" src="blind-pics/1.jfif"></div>
       <div class="questions">
-      <input class="hide" type="text" id="1" value="" />
+      <input class="hide" type="number" id="1" value="" />
     </div>
       <div>
 
     <img src="blind-pics/2.jfif">
   </div id="test">
-      <div class="questions"> <form action="/action_page.php">
-        <input class="hide" type="text" id="2" value=""/>
+      <div class="questions">
+        <input class="hide" type="number" id="2" value=""/>
       </div>
       <div>
-      <img src="blind-pics/3.jfif">
+      <img id="quiz-pic" src="blind-pics/3.jfif">
     </div>
-        <div class="questions"> <form action="/action_page.php">
-          <input class="hide" type="text" id="3" value=""/>
+        <div class="questions">
+          <input class="hide" type="number" id="3" value=""/>
         </div>
         <div>
-        <img src="blind-pics/4.jfif">
+        <img id="quiz-pic" src="blind-pics/4.jfif">
       </div>
-          <div class="questions"> <form action="/action_page.php">
-            <input class="hide" type="text" id="4" value=""/>
+          <div class="questions">
+            <input class="hide" type="number" id="4" value=""/>
           </div>
           <div>
-          <img src="blind-pics/5.jfif">
+          <img id="quiz-pic" src="blind-pics/5.jfif">
         </div>
-            <div class="questions"> <form action="/action_page.php">
-              <input class="hide" type="text" id="5" value=""/>
+            <div class="questions">
+              <input class="hide" type="number" id="5" value=""/>
             </div>
             <div>
-            <img src="blind-pics/6.jfif">
+            <img id="quiz-pic" src="blind-pics/6.jfif">
           </div>
-              <div class="questions"> <form action="/action_page.php">
-                <input class="hide" type="text" id="6" value=""/>
+              <div class="questions">
+                <input class="hide" type="number" id="6" value=""/>
               </div>
               <div>
-              <img src="blind-pics/7.jfif">
+              <img id="quiz-pic" src="blind-pics/7.jfif">
             </div>
-                <div class="questions"> <form action="/action_page.php">
-                  <input class="hide" type="text" id="2" value=""/>
+                <div class="questions">
+                  <input class="hide" type="number" id="7" value=""/>
                 </div>
                 <div>
-                <img src="blind-pics/8.jfif">
+                <img id="quiz-pic" src="blind-pics/8.jfif">
               </div>
-                  <div class="questions"> <form action="/action_page.php">
-                    <input class="hide" type="text" id="2" value=""/>
+                  <div class="questions">
+                    <input class="hide" type="number" id="8" value=""/>
                   </div>
                   <div>
-                  <img src="blind-pics/9.jfif">
+                  <img id="quiz-pic" src="blind-pics/9.jfif">
                 </div>
-                    <div class="questions"> <form action="/action_page.php">
-                      <input class="hide" type="text" id="2" value=""/>
+                    <div class="questions">
+                      <input class="hide" type="number" id="9" value=""/>
                     </div>
                     <div>
-                    <img src="blind-pics/10.jfif">
+                    <img id="quiz-pic" src="blind-pics/10.jfif">
                   </div>
-                      <div class="questions"> <form action="/action_page.php">
-                        <input class="hide" type="text" id="2" value=""/>
+                      <div class="questions">
+                        <input class="hide" type="number" id="10" value=""/>
                       </div>
                       <div>
                       </body>
-          <input id="submit" type="submit" formaction="results.html" value="Submit" onclick="result()">
+          <button id="submit" onclick="result()">SUBMIT</button>
         </div>
 
-          <body background="blind-pics/web-pixel.webp" height= 300px width= 500px>
+          <body background="blind-pics/color-sphere.gif" height= 300px width= 500px>
             <img id='img' src="" height= 300px width= 500px ></div>
 
-        <h1><p id="results"> You have a of being colorblind!<p>
-          
+        <h1><p class="end"> This is your chance of bring colorblind!</p> <div id="results"></div>
+
 </html>

@@ -15,13 +15,16 @@ body#home {
 }
 
 body#test {
-  background-image: url("blind-pics/web-pixel.webp");
 }
 
-#submit {
-
+#end {
+  color: white;
 }
 
+#quiz-pic {
+  height: 100px;
+  width: 500px;
+}
 .hide{
   /*display:none;*/
 }

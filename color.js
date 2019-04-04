@@ -1,6 +1,7 @@
   var textInput = "";
-  var results = [];
+  let results = [];
   var start = document.createElement("INPUT");
+  let scores;
 
 let x = document.getElementsByClassName("hide");
 let timesClicked = 1;
@@ -74,12 +75,6 @@ function submit(){
   /*  if (start != 74) {
       start.setAttribute("value", "");
     } */
-      if (start !== 74) {
-        console.log("WRONG");
-      } else if (start == 74) {
-        console.log ("CORRECT");
-        results.push("74")
-    }
     /* let one = document.getElementsByClassName("hide");
     for(let y = 0; y < one.length; y++) {
       one[y].style.display = "none";
@@ -87,7 +82,7 @@ function submit(){
 }
 
   function colorTwo() {
-    if (start !== 0) {
+  /*  if (start !== 0) {
       colorThree();
     } else {
     start = textInput;
@@ -97,14 +92,14 @@ function submit(){
         results.push("12");
       } else {
         console.log ("WRONG");
-      }
+      }*/
     }
 
 
   function colorThree() {
 
 
-    if (start > 0 || start < 0) {
+  /*  if (start > 0 || start < 0) {
       colorFour();
     } else {
       start = textInput;
@@ -114,13 +109,13 @@ function submit(){
         results.push("29");
       } else {
         console.log ("WRONG");
-      }
+      } */
 }
 
   function colorFour() {
 
 
-    if (start > 0 || start < 0) {
+  /*  if (start > 0 || start < 0) {
       colorFive();
     } else {
       start = textInput;
@@ -130,13 +125,13 @@ function submit(){
         results.push("2");
       } else {
         console.log ("WRONG");
-      }
+      } */
 }
 
   function colorFive() {
 
 
-    if (start > 0 || start < 0) {
+  /*  if (start > 0 || start < 0) {
       colorSix();
     } else {
       start = textInput;
@@ -146,13 +141,13 @@ function submit(){
         results.push("8");
       } else {
         console.log ("WRONG");
-      }
+      } */
 }
 
   function colorSix() {
 
 
-    if (start > 0 || start < 0) {
+/*    if (start > 0 || start < 0) {
       colorSeven();
     } else {
       start = textInput;
@@ -162,13 +157,13 @@ function submit(){
         results.push("7")
       } else {
         console.log ("WRONG");
-      }
+      } */
 }
 
   function colorSeven() {
 
 
-    if (start > 0 || start < 0) {
+  /*  if (start > 0 || start < 0) {
       colorEight();
     } else {
       start = textInput;
@@ -178,13 +173,13 @@ function submit(){
         results.push("8");
       } else {
         console.log ("WRONG");
-      }
+      }*/
 }
 
   function colorEight() {
 
 
-    if (start > 0 || start < 0) {
+/*    if (start > 0 || start < 0) {
       colorNine();
     } else {
       start = textInput;
@@ -194,60 +189,99 @@ function submit(){
         results.push("26");
       } else {
         console.log ("WRONG");
-    }
+    } */
 }
 
   function colorNine() {
-
-
-    if (start > 0 || start < 0) {
-      colorTen();
-    } else {
-      start = textInput;
-    }
+/*
       if (start == 6) {
         console.log("CORRECT");
         results.push("6");
       } else {
         console.log ("WRONG");
-      }
+      }*/
   }
 
   function colorTen() {
-
-
-    if (start > 0 || start < 0) {
-        result();
-      } else {
-        start = textInput;
-      }
-        if (start == 15) {
+/*        if (start == 15) {
           console.log("CORRECT");
           results.push("15");
         } else {
           console.log ("WRONG");
-        }
+        }*/
   }
 
 function result() {
     // show image based how many answers are correct
+    if (document.getElementById("1").innerHTML == 74) {
+          console.log ("CORRECT");
+          results.push("74");
+          document.getElementById("results").innerHTML = results;
+      }
+    if (document.getElementById("2").innerHTML == 12) {
+      console.log("CORRECT");
+      results.push("12");
+      document.getElementById("results").innerHTML = results;
+    }
+    if (document.getElementById("3").innerHTML == 29) {
+          console.log ("CORRECT");
+          results.push("74");
+          document.getElementById("results").innerHTML = results;
+      }
+    if (document.getElementById("4").innerHTML == 2) {
+      console.log("CORRECT");
+      results.push("12");
+      document.getElementById("results").innerHTML = results;
 
-  var scores = console.log(results.length);
+    }
+    if (document.getElementById("5").innerHTML == 8) {
+          console.log ("CORRECT");
+          results.push("74");
+          document.getElementById("results").innerHTML = results;
 
-  for (i = 0; i < i.length; i++) {
+      }
+    if (document.getElementById("6").innerHTML == 7) {
+      console.log("CORRECT");
+      results.push("12");
+      document.getElementById("results").innerHTML = results;
+    }
+    if (document.getElementById("7").innerHTML == 8) {
+          console.log ("CORRECT");
+          results.push("74");
+          document.getElementById("results").innerHTML = results;
+
+      }
+    if (document.getElementById("8").innerHTML == 26) {
+      console.log("CORRECT");
+      results.push("26");
+      document.getElementById("results").innerHTML = results;
+
+    }
+    if (document.getElementById("9").innerHTML == 6) {
+          console.log ("CORRECT");
+          results.push("6");
+          document.getElementById("results").innerHTML = results;
+      }
+    if (document.getElementById("10").innerHTML == 15) {
+      console.log("CORRECT");
+      results.push("15");
+      document.getElementById("results").innerHTML = results;
+    }
+    console.log(results.length);
+
+/*  for (i = 0; i < i.length; i++) {
     if (results.length == 10 && results.length > 8) {
-      document.getElementById("img").src += "blind-pics/best-result.gif";
+      document.getElementById("img").src = "blind-pics/best-result.gif";
     }
     if (results.length < 7 && results.length > 5) {
-      document.getElementById("img").src += "blind-pics/colorblind.gif";
+      document.getElementById("img").src = "blind-pics/colorblind.gif";
     }
     if (results.length < 4) {
-      document.getElementById("img").src += "blind-pics/FG-bad.jfif";
-    }
-    return results.length;
+      document.getElementById("img").src = "blind-pics/FG-bad.jfif";
+    }*/
+    document.getElementById("results").innerHTML = results.length;
   }
-  document.getElementById("results").innerHTML = results.length;
-}
+
 
 function percent() {
   // needto display chance as value of colorblindness
