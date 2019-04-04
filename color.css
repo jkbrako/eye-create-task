@@ -15,6 +15,7 @@ body#home {
 }
 
 body#test {
+<<<<<<< HEAD
   background-image: url("blind-pics/web-pixel.webp");
 }
 
@@ -22,6 +23,18 @@ body#test {
 
 }
 
+=======
+}
+
+#end {
+  color: white;
+}
+
+#quiz-pic {
+  height: 100px;
+  width: 500px;
+}
+>>>>>>> 48068eb0c91831dcc2871f995bbcad8fcab70caa
 .hide{
   /*display:none;*/
 }
