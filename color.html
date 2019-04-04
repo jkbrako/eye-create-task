@@ -2,14 +2,28 @@
 
 <html>
   <head>
-    <center><title>Colorblinr Online Visual Test</title></center>
+    <center><title>Colorblind Online Visual Test</title></center>
     <link rel="stylesheet" href="color.css" />
     <script type="text/javascript" src="color.js"></script>
   </head>
-  <body>
+  <body id="home">
     <div align="center">
       <!--Images need to be in files-->
     <h1 id="title"> Are You Colorblind? </h1>
-<img src="blind-pics/" height= 300px width= 500px></div>
+<img src="blind-pics/eye.gif" height= 300px width= 500px></div>
 <hr/>
-<button onclick="sayHello();">Hello</button>
+<div align="center">
+<input class="hide" type="text" id="textInput" value="" />
+<div align="center" id="intro" class="show">
+  Colorblindness is a vision deficiency that impairs your vision to see a limited
+  number. With this vision problem, you have difficulty distinguishing certain
+  colors, such as blue & yellow or red & green. The purpose of this site is to gain a
+  basic understanding of how visually impaired you are.
+  <div>
+    <form><button formaction="test.html">START QUIZ<button/></form>
+  <div>
+
+    <!--<ul>
+      <li class="continue"> <a href="..\eye-create-task\test.html"></a></li>
+      <li class="continue"> <a href="..\eye-create-task\results.html"></a></li>
+    </ul>-->
