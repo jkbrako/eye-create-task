@@ -32,9 +32,11 @@ body#test {
 
 #quiz-pic {
   height: 100px;
-  width: 500px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
 }
->>>>>>> 48068eb0c91831dcc2871f995bbcad8fcab70caa
 .hide{
   /*display:none;*/
 }
