@@ -3,13 +3,25 @@
   color: white;
 }
 
-* , *::before, *::after {
+#start {
+  color: black;
+}
+
+.show {
+  display: block;
+  border: 5px solid black;
+  background-color: black;
+  opacity: 0.8;
+}
+
+/* * , *::before, *::after {
   font-size: 20px;
   font-family: monospace;
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
+*/
 body#home {
   background-image: url("blind-pics/tough.webp");
 }
@@ -19,6 +31,8 @@ body#test {
   background-image: url("blind-pics/web-pixel.webp");
 }
 
+
+
 #submit {
 
 }
@@ -26,16 +40,13 @@ body#test {
 =======
 }
 
-#end {
-  color: white;
-}
 
 #quiz-pic {
-  height: 100px;
-  width: 200px;
+  height: 300px;
+  width: 500px;
   display: block;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 .hide{
   /*display:none;*/
@@ -67,7 +78,14 @@ input {
 button:hover {
   color: white;
 }
-h1#title {
+#title {
+  font-family: monospace;
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+h1#visual {
   font-family: monospace;
   color: white;
   font-weight: bold;
