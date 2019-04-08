@@ -26,6 +26,13 @@ h1#show {
   width: 100%;
 }
 
+h2#insruct {
+  font-size: 25px;
+}
+
+p#insruct {
+  font-size: 15px;
+}
 p#intro {
   font-size:200%;
 }
