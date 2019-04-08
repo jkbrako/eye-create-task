@@ -88,6 +88,8 @@ function reset(){
   document.getElementById("8").value = "";
   document.getElementById("9").value = "";
   document.getElementById("10").value = "";
+  randomizeItems();
+  randomizeList();
 }
 
 // UNCONFIRMED
