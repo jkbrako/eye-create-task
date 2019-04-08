@@ -10,7 +10,6 @@ function result() {
       console.log("CORRECT");
       scores.push("42");
       document.getElementById("results").value = scores;
-       ;
     }
     if (document.getElementById("3").value == 29) {
           console.log ("CORRECT");
@@ -109,7 +108,7 @@ function randomizeItems(items)
 function randomizeList() {
   var list =document.getElementById("colorPics");
   var nodes = list.children, i=0;
-  nodes = Arrat.prototype.slice.call(nodes);
+  nodes = Array.prototype.slice.call(nodes);
   nodes = randomizeItems(nodes);
   while(i < nodes.length){
     list.appendChild(nodes[i]);
