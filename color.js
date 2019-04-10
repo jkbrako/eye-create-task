@@ -55,6 +55,8 @@ function result() {
   if (scores.length == 0) {
     console.log("FAIL");
     document.getElementById("results").innerHTML = "Try Again... OR 100%";
+    document.getElementById("blind-pics").src = "blind-pics/FG-oof.gif";
+    document.getElementById("blind-pics").style.display = "block";
   }
   if (scores.length == 10 && scores.length > 8) {
     document.getElementById("blind-pics").src = "blind-pics/best-result.gif";
@@ -62,7 +64,7 @@ function result() {
     document.getElementById("results").innerHTML = 100-(((scores.length)/10)*100) + "%";
   }
   if (scores.length < 7 && scores.length > 5) {
-    document.getElementById("blind-pics").src = "blind-pics/colorblind.gif";
+    document.getElementById("blind-pics").src = "blind-pics/certified.webp";
     document.getElementById("blind-pics").style.display = "block";
     document.getElementById("results").innerHTML = 100-(((scores.length)/10)*100) + "%";
   }
@@ -93,11 +95,9 @@ function reset(){
 
 // UNCONFIRMED
 
-function randomizeItems(items)
-{
+function randomizeItems(items) {
   var cached = items.slice(0), temp, i = cached.length, rand;
-  while(--i)
-  {
+  while(--i) {
     rand = Math.floor(i * Math.random());
     temp = cached[rand];
     cached[rand] = cached[i];

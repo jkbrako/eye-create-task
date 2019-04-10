@@ -15,7 +15,7 @@
   display: block;
   border: 5px solid black;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 body#home {
@@ -35,10 +35,18 @@ p#insruct {
 }
 p#intro {
   font-size:200%;
+  font-family: 'Cabin', sans-serif;
 }
 
 
 img#quiz-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid black;
+}
+
+img#blind-pics {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -98,4 +106,13 @@ h1#visual {
   color: white;
   font-weight: bold;
   font-size: 80px;
+}
+
+footer {
+  font-weight: bold;
+  display: block;
+  border: 5px solid black;
+  background-color: black;
+  opacity: 0.8;
+  width: 43%;
 }
