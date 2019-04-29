@@ -73,8 +73,7 @@ function result() {
     document.getElementById("blind-pics").style.display = "block";
     document.getElementById("results").innerHTML = 100-(((scores.length)/10)*100) + "%";
   }
-  document.getElementById("end").style.color = "white";
-  document.getElementById("results").style.color = "grey";
+  document.getElementById("results").style.color = "white";
   reset();
 }
 
